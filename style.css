@@ -372,10 +372,12 @@ img {
 .homeDesign__details small {
   font-size: 1.3rem;
 }
-.homeDesign__details h2 {
+.homeDesign__details h1 {
   font-size: 5rem;
   font-family: var(--clr-secondary);
   margin-bottom: 3rem;
+  text-align: center;
+  justify-content: center;
 }
 .homeDesign__details p {
   max-width: 60rem;
@@ -412,9 +414,10 @@ img {
   text-align: left;
   border-right: 1px solid rgba(18, 17, 17, 0.1);
 }
-.homeDesign__card h4 {
+.homeDesign__card h5 {
   font-family: var(--font-secondary);
   font-size: 2.5rem;
+  text-align: center;
 }
 .homeDesign__card small {
   font-size: 1.3rem;
@@ -481,6 +484,7 @@ img {
   font-style: italic;
   font-weight: 200;
   color: var(--clr-primary);
+  
 }
 .homeTradition__item p {
   margin-top: 1rem;
@@ -965,41 +969,41 @@ padding: 5rem 0;
 }
 
 /* TRADITION BANNER */
-.bannerTradition {
+.traditionBanner {
   padding: 5rem 0;
 }
-.bannerTradition__wrapper {
+.traditionBanner__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.bannerTradition h1 {
+.traditionBanner h1 {
   font-size: 8rem;
   color: var(--clr-primary);
   letter-spacing: -0.5rem;
+  justify-content: center;
+  text-align: center;
 }
-.bannerTradition h5 {
+.traditionBanner h5 {
   color: var(--clr-secondary);
   font-style: italic;
   font-weight: 200;
   font-size: 2rem;
   font-family: var(--font--secondary);
-  max-width: 48rem;
-  text-align: center;
+  max-width: 55rem;
 }
 .bannerTradition__img {
-  width: 40%;
+  width: 100%;
   margin-bottom: 5rem;
 }
 .bannerTradition__cards {
   margin-top: 5rem;
-  padding: 5rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem;
 }
-.bannerTradition__cardsimg {
+.bannerTradition__cards img {
   width: 100rem;
   margin-bottom: 0.4rem;
 }
@@ -1016,20 +1020,14 @@ padding: 5rem 0;
     margin-bottom: 0;
   }
   .traditionBanner__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
   .traditionBanner__wrapper img {
-    width: unset;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 5rem;
-  }
-  .tradition {
-    padding: unset;
-    margin-top: unset;
   }
   .bannerTradition__cards {
     grid-template-columns: 1fr;
@@ -1045,7 +1043,7 @@ padding: 5rem 0;
 /* DECOR-MOBILE */
 @media screen and (max-width: 520px){
   .bannerDecor {
-    padding: 5rem;
+    /* padding: 5rem; */
     height: 30rem;
   }
   .bannerDecor h1 {
@@ -1060,10 +1058,11 @@ padding: 5rem 0;
   justify-content: center;
   }
  .bannerDecor__wrapper img {
-  width: unset;
+
+
+  
   display: flex;
   justify-content: center;
-  margin: 5rem;
  } 
 }
 
@@ -1101,11 +1100,13 @@ padding: 5rem 0;
 }
 .foodsanddrinks h1{
   font-size: 7rem;
+  text-align: center;
 }
 .foodsanddrinks h5{
   font-size: 2rem;
   color: var(--clr-secondary);
   font-family: var(--font-secondary);
+  text-align: center;
 }
 .foodsanddrinks__wrapper {
   background-color: var(--clr-secondary);
@@ -1195,22 +1196,28 @@ padding: 5rem 0;
 @media screen and (max-width: 520px) {
   .foodsanddrinks{
     padding-top: 10rem;
+    margin-bottom: 0;
   }
   .foodsanddrinks h1{
     font-size: 3.9rem;
     margin-bottom: 0.5rem;
     letter-spacing: unset;
+    text-align: center;
   }
   .foodsanddrinks h5{
     font-size: 2rem;
     letter-spacing: -0.1rem;
+    text-align: center;
+    letter-spacing: normal;
   }
   .foodsanddrinks{
     padding: 2.5rem 0;
+    text-align: center;
   }
   .foodsanddrinks__cards h2{
     font-size: 3rem;
     line-height: 4rem;
+    text-align: center;
    }
    .foodsanddrinks__cards{
     grid-template-columns: 1fr;
